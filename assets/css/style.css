@@ -1,4 +1,53 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+nav span {
+    font-weight: 700;
+    font-size: 25px;
+    color: #008a4c;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.phone {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.phone i {
+    margin-right: 10px;
+    color: #008a4c;
 }
