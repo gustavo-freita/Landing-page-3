@@ -137,8 +137,11 @@ main {
 }
 
 .imagens .img02{
-    display: none;
     position: absolute;
+    left: 1120px;
+    top: 70px;
+    width: 80px;
+    rotate: 40deg;
 }
 
 .imagens .img03{
