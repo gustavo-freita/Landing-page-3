@@ -7,6 +7,8 @@
 
 body {
     background-color: #FFF2E2;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 header {
@@ -154,4 +156,8 @@ main {
 
 .imagens .img04{
     position: absolute;
+    left: 0;
+    top: 465px;
+    width: 150px;
+    rotate: -40deg;
 }
