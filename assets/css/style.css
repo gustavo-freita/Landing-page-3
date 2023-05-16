@@ -145,11 +145,13 @@ main {
 }
 
 .imagens .img03{
-    display: none;
     position: absolute;
+    left: 1180px;
+    top: 370px;
+    width: 150px;
+    rotate: 40deg;
 }
 
 .imagens .img04{
-    display: none;
     position: absolute;
 }
