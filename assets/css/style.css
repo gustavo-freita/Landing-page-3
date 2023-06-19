@@ -29,6 +29,7 @@ nav span {
     font-weight: 700;
     font-size: 25px;
     color: #008a4c;
+    animation: logo 2s ease forwards;
 }
 
 ul {
@@ -36,10 +37,12 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    animation: cabecalho 2s ease forwards;
 }
 
 li {
     list-style: none;
+    cursor: pointer;
 }
 
 li a {
@@ -52,6 +55,7 @@ li a {
 .phone {
     font-size: 15px;
     font-weight: 500;
+    animation: logo 2s ease forwards;
 }
 
 .phone i {
@@ -80,6 +84,7 @@ main {
     margin-left: 5px;
     margin-bottom: 320px;
     letter-spacing: -10px;
+    animation: apresentacao 1s ease forwards;
 }
 
 .content h1 span {
@@ -93,6 +98,7 @@ main {
     position: absolute;
     top: 340px;
     left: 200px;
+    animation: logo 1s ease forwards;
 }
 
 .content .button{
@@ -105,6 +111,8 @@ main {
     position: absolute;
     top: 430px;
     left: 200px;
+    animation: botao 1s ease forwards;
+    cursor: pointer;
 }
 
 .icons {
@@ -160,4 +168,48 @@ main {
     top: 465px;
     width: 150px;
     rotate: -40deg;
+}
+
+@keyframes logo {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cabecalho {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes apresentacao {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    transform-opacity: 1;
+  }
+}
+
+@keyframes botao {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    transform-opacity: 1;
+  }
 }
