@@ -144,6 +144,7 @@ main {
     position: absolute;
     left: 435px;
     top: -100px;
+    animation: img01 1s ease forwards;
 }
 
 .imagens .img02{
@@ -168,6 +169,21 @@ main {
     top: 465px;
     width: 150px;
     rotate: -40deg;
+}
+
+#span01 {
+  animation: botao 1s ease forwards;
+  cursor: pointer;
+}
+
+#span02 {
+  animation: img01 1s ease forwards;
+  cursor: pointer;
+}
+
+#span03 {
+  animation: botao 1s ease forwards;
+  cursor: pointer;
 }
 
 @keyframes logo {
@@ -206,6 +222,17 @@ main {
 @keyframes botao {
   0% {
     transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    transform-opacity: 1;
+  }
+}
+
+@keyframes img01 {
+  0% {
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
