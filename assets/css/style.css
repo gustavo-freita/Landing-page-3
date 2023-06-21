@@ -152,7 +152,7 @@ main {
     left: 1120px;
     top: 70px;
     width: 80px;
-    rotate: 40deg;
+    animation: animacao01 1s ease forwards;
 }
 
 .imagens .img03{
@@ -160,7 +160,7 @@ main {
     left: 1180px;
     top: 370px;
     width: 150px;
-    rotate: 40deg;
+    animation: animacao01 1s ease forwards;
 }
 
 .imagens .img04{
@@ -168,7 +168,7 @@ main {
     left: 0;
     top: 465px;
     width: 150px;
-    rotate: -40deg;
+    animation: animacao02 1s ease forwards;
 }
 
 #span01 {
@@ -237,6 +237,32 @@ main {
   }
   100% {
     transform: translateY(0);
+    transform-opacity: 1;
+  }
+}
+
+@keyframes animacao01 {
+  0% {
+    transform: translateY(100px);
+    rotate: 0;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    rotate: 40deg;
+    transform-opacity: 1;
+  }
+}
+
+@keyframes animacao02 {
+  0% {
+    transform: translateX(100px);
+    rotate: 0;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    rotate: -40deg;
     transform-opacity: 1;
   }
 }
